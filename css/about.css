@@ -1,0 +1,61 @@
+/* || DISPLAY: GRID */
+
+.about-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    ". intro ."
+    ". content ."
+    ;
+    row-gap: 3.125em;
+}
+
+.about-intro {
+    grid-area: intro;
+}
+
+.article-content {
+    grid-area: content;
+}
+
+/* ============================================================ */
+
+
+
+/* || LAYOUT */
+
+header {
+    padding-bottom: 2.75em;
+}
+
+.about-article {
+    padding-bottom: 2.8125em;
+}
+
+.about-intro {
+    min-width: 374px;
+}
+
+.about-intro img {
+    padding-bottom: 1.6875em;
+}
+
+.about-intro h1 {
+    padding-bottom: 0.459242em;
+}
+
+/* ============================================================ */
+
+
+
+/* || TYPOGRAPHY */
+
+.about-article {
+    color: #151515;
+}
+
+.about-intro h1 {
+    font-size: 2.1775rem;
+    font-weight: 700;
+    line-height: 1.08;
+}

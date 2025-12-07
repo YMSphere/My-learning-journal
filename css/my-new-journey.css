@@ -1,0 +1,104 @@
+/* || DISPLAY: GRID */
+
+.article-my-new-journey {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    ". intro ."
+    ". image ."
+    ". content ."
+    ;
+    row-gap: 2.1875em;
+}
+
+.text-inside{
+    grid-area: intro;
+}
+
+.article-img {
+    grid-area: image;
+}
+
+.article-content {
+    grid-area: content;
+    display: grid;
+    row-gap: 1.25em;
+}
+
+
+.recent-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". bl1 ."
+    ". bl2 ."
+    ". bl3 ."
+    ;
+    row-gap: 2.5625em;;
+}
+
+.blog-1 {
+    grid-area: bl1;
+}
+
+.blog-2 {
+    grid-area: bl2;
+}
+
+.blog-3 {
+    grid-area: bl3;
+}
+/* ============================================================ */
+
+
+
+/* || DISPLAY: FLEX */
+
+.text-inside {
+    gap: 15px;
+}
+/* ============================================================ */
+
+
+
+/* || LAYOUT */
+
+header {
+    padding-bottom: 3.1875em;
+}
+
+.article-my-new-journey {
+    padding-bottom: 3.1875em;
+}
+
+.article-img {
+    display: block;
+}
+
+.recent-posts-txt {
+    padding: 0 0 1.6875em;
+    text-align: center;
+}
+
+.recent-posts {
+    padding-bottom: 3.5em;
+}
+/* ============================================================ */
+
+
+
+/* || TYPOGRAPHY */
+
+.article-my-new-journey {
+    color: #151515;
+}
+
+.article-content h2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.recent-posts-txt {
+    font-size: 1rem;
+    font-weight: 700;
+}
