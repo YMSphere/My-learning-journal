@@ -1,0 +1,165 @@
+/* || DISPLAY: GRID */
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 68px 1fr 68px;
+    grid-template-areas: 
+    "head head head"
+    "image image image"
+    "text text text"
+    ;
+
+    row-gap: 35px;
+}
+
+.article-header {
+    grid-area: head;
+}
+
+.article-img {
+    grid-area: image;
+}
+
+.article-text {
+    grid-area: text;
+}
+
+/* || DISPALY: FLEX */
+
+.article-header, .article-text {
+    display: flex;
+    flex-flow: column;
+}
+
+.article-header {
+    row-gap: 1em;
+}
+
+.article-text {
+    row-gap: 1.375em;
+}
+
+
+
+/* || IMAGES */
+
+.article-img {
+    width: 100%;
+}
+
+
+
+/* || LAYOUT */
+
+.article-grid {
+    padding-top: 2em;
+    padding-bottom: 3.1875em;
+} 
+
+.recent {
+    padding-bottom: 1.75rem;
+    text-align: center;
+}
+
+
+
+/* || UTILITY */
+
+.recent-posts-btmpadding {
+    padding-bottom: 3.5em;
+}
+
+
+
+/* || TYPOGRAPHY */
+
+.article-grid {
+    color: #151515;
+}
+
+.article-date {
+    font-size: 0.75rem;
+}
+
+.article-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.article-subheading {
+    font-size: 1rem;
+}
+
+.recent {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+/* || MEDIA QUERIES */
+
+@media (min-width: 800px) {
+    
+    /* || DISPLAY: GRID */
+
+    .article-grid {
+        grid-template-areas: 
+        ". head ."
+        "image image image"
+        ". text ."
+        ;
+    }
+
+
+
+    /* || DISPALY: FLEX */
+
+    .article-header {
+        row-gap: 1.625em;
+    }
+        
+
+
+    /* || UTILITY */
+
+    .recent-posts-btmpadding {
+        padding-bottom: 3.1875em;
+    }
+
+    
+
+    /* || LAYOUT */
+    
+    .article-grid {
+        padding-top: 4.5em;
+        padding-bottom: 4.5em;
+    }
+
+    
+    /* || TYPOGRAPHY */
+
+    .article-date {
+        font-size: 1rem;
+    }
+    
+    .article-heading {
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 1.08;
+    }
+    
+    .article-subheading {
+        font-size: 1.5rem;
+    }
+    
+    .article-text p {
+        font-size: 1.125rem;
+    }
+    
+    .recent {
+        font-size: 1.5rem;
+        line-height: 1.08;
+    }
+}
